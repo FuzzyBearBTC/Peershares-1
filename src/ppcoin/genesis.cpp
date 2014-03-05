@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     printf("PPCoin Begin Genesis Block\n");
 
     // Genesis block
-    const char* pszTimestamp = "Matonis 07-AUG-2012 Parallel Currencies And The Roadmap To Monetary Freedom";
+    const char* pszTimestamp = "Reuters 04-Mar-2014 FOREX-Yen, Swiss franc slide; rouble bounces as Ukraine tensions ease";
     CTransaction txNew;
     txNew.vin.resize(1);
     txNew.vout.resize(1);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     block.hashMerkleRoot = block.BuildMerkleTree();
     block.nVersion = 1;
     block.nBits = CBigNum(~uint256(0) >> 28).GetCompact(); //0x1d00ffff;
-    block.nTime = 1345090000; //GetAdjustedTime();
+    block.nTime = 1394030000; //GetAdjustedTime();
     block.nNonce = 0;
 
     CBigNum bnTarget;
