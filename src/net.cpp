@@ -997,7 +997,8 @@ void MapPort(bool /* unused fMapPort */)
 // The second name should resolve to a list of seed addresses.
 // testnet dns seed begins with 't', all else are ppcoin dns seeds.
 static const char *strDNSSeed[][2] = {
-    {"seed", "96.241.43.48:9090"},
+    {"BenSeed", "96.241.43.48:9090"},
+    {"FuzzybearSeed", "37.188.117.96:9999"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
