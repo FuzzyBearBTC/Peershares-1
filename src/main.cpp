@@ -2236,21 +2236,21 @@ bool LoadBlockIndex(bool fAllowNew)
             block.nNonce   = 122894938;
         }
         
-        CBigNum bnTarget;
-        bnTarget.SetCompact(block.nBits);
+        //        CBigNum bnTarget;
+//        bnTarget.SetCompact(block.nBits);
 
-        while (block.GetHash() > bnTarget.getuint256())
-        {
-            if (block.nNonce % 1048576 == 0)
-                printf("n=%dM hash=%s\n", block.nNonce / 1048576,
-                       block.GetHash().ToString().c_str());
-            block.nTime = GetAdjustedTime();
-            block.nNonce++;
-        }
+//        while (block.GetHash() > bnTarget.getuint256())
+//        {
+//            if (block.nNonce % 1048576 == 0)
+//                printf("n=%dM hash=%s\n", block.nNonce / 1048576,
+//                       block.GetHash().ToString().c_str());
+//            block.nTime = GetAdjustedTime();
+//            block.nNonce++;
+//        }
      
-        printf("PPCoin Found Genesis Block:\n");
-        printf("genesis hash=%s\n", block.GetHash().ToString().c_str());
-        printf("merkle root=%s\n", block.hashMerkleRoot.ToString().c_str());
+//        printf("PPCoin Found Genesis Block:\n");
+//        printf("genesis hash=%s\n", block.GetHash().ToString().c_str());
+//        printf("merkle root=%s\n", block.hashMerkleRoot.ToString().c_str());
         block.print();
      
         printf("PPCoin End Genesis Block\n");
